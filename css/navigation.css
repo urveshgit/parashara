@@ -1,0 +1,13 @@
+body, html {
+  height: 100%;
+  margin:0;
+  scroll-behavior: smooth;
+}
+
+.nav > li > a {
+  color: gray;
+  font-family:Verdana, Geneva, sans-serif;
+}
+.nav > li > a:hover:not(.active){
+  color: white;
+}

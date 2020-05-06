@@ -1,0 +1,38 @@
+%message {
+  font-family: sans-serif serif;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 4px 2px;
+  padding: 15px 32px;
+}
+
+$color:black;
+
+.btnmore{
+  @extend %message;
+  background-color: white;
+  border: 1px solid green;
+  color: $color;
+}
+
+.btnmore:hover{
+  background-color: green;
+  color:white;
+}
+
+.gototop{
+  @extend %message;
+  position: fixed;
+  bottom: 10px;
+  right:10px;
+  background-color: white;
+  color: $color;
+}
+
+.gototop:hover{
+  background-color: black;
+  color:white;
+}

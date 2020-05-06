@@ -1,0 +1,53 @@
+
+.grid1{
+  text-align: center;
+  padding: 10px;
+}
+
+#imgpanels{
+  width: 15%;
+  float: left;
+}
+
+@media screen and (max-width:600px) {
+.col-lg{
+  float: left;
+  }
+}
+
+.containerIMG{
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  /* top:50%;
+  left: 50%; */
+  transform: translate(-50%,-50%);
+  transform: scale(1); /* added line */
+  border-radius: 50%;
+  overflow:hidden;
+}
+.containerIMG img{
+  width: 100%;
+  transition: all 3s ease-in-out;
+}
+.containerIMG:hover img{
+  /* transform: rotate(360deg); */
+  transform: scale(0) rotate(360deg);
+  border-radius: 100%;
+  opacity: 0;
+}
+
+.bg {
+  background-image: url('./Image/NGC1532-final3_4096r.jpg');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row > div {
+  margin:5px;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid black;
+}
